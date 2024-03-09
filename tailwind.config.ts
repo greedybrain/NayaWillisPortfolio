@@ -9,9 +9,10 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                primary: "#394B71",
-                secondary: "#FE625C",
-                tertiary: "#fffbf3ff",
+                primary: "#dac5f7",
+                secondary: "#b9f7bf",
+                tertiary: "#FADE5A",
+                quatenary: "#fabfe2",
             },
             boxShadow: {
                 "neo-xs": "2px 2px 0 0 #000000",

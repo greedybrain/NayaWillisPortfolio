@@ -1,6 +1,4 @@
 import Project from "./Project";
-import ProjectVideoDemo from "../projectVideos/ProjectVideoDemo";
-import React from "react";
 import projects from "../projects/data/projects.json";
 
 const Projects = () => {

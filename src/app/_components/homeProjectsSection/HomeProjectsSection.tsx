@@ -1,15 +1,16 @@
 import AppSection from "../0_common/AppSection";
 import Projects from "./projects/Projects";
+import React from "react";
 // import FixedWidthContainer from "../FixedWidthContainer";
 import { cn } from "@/lib/utils";
 
 const HomeProjectsSection = () => {
-    const getNums = () => {
-        const nums = [];
-        for (let i = 0; i < 1000; i++) {
-            nums.push(i);
+    const renderRepeatTitle = () => {
+        let title = "";
+        for (let i = 0; i < 10; i++) {
+            title += "Featured Projects\t\t";
         }
-        return nums;
+        return title;
     };
 
     return (
@@ -23,32 +24,20 @@ const HomeProjectsSection = () => {
                     "gap-10",
                     "h-[60px]",
                     "items-center",
-                    "w-[9999px]",
+                    "overflow-hidden",
                 )}
             >
                 <p
-                    // key={index}
                     className={cn(
-                        "border-2 border-blue-500",
-                        "text-center text-lg text-white",
-                        "w-[175px]",
+                        "flex font-medium",
+                        "items-center",
+                        "px-5",
+                        "text-center text-nowrap text-xl text-white",
+                        "whitespace-pre-wrap",
                     )}
                 >
-                    Featured Projects
+                    {renderRepeatTitle()}
                 </p>
-                {/* {getNums().map((_, index) => {
-                    return (
-                        <p
-                            key={index}
-                            className={cn(
-                                "border-2 border-blue-500",
-                                "w-[500px]",
-                            )}
-                        >
-                            Featured Projects
-                        </p>
-                    );
-                })} */}
             </div>
             <Projects />
         </AppSection>
