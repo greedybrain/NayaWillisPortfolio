@@ -13,9 +13,9 @@ const HeroRoleTag = ({ text, rotation, bgColor }: HeroRoleTagProps) => {
         <AppSpan
             className={cn(
                 `border-2 border-black ${bgColor}`,
-                "font-medium",
+                "font-bold",
                 "inline-block",
-                "p-4",
+                "py-3 px-6",
                 `rounded-md ${rotation}`,
                 "shadow-neo-sm",
                 "text-xl text-center",

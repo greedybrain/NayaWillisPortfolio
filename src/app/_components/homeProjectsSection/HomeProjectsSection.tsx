@@ -8,7 +8,7 @@ const HomeProjectsSection = () => {
     const renderRepeatTitle = () => {
         let title = "";
         for (let i = 0; i < 10; i++) {
-            title += "Featured Projects\t\t";
+            title += "FEATURED PROJECTS\t\t";
         }
         return title;
     };
@@ -29,7 +29,7 @@ const HomeProjectsSection = () => {
             >
                 <p
                     className={cn(
-                        "flex font-medium",
+                        "flex font-bold",
                         "items-center",
                         "px-5",
                         "text-center text-nowrap text-xl text-white",

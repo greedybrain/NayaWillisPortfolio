@@ -6,7 +6,7 @@ const AboutTitle = () => {
         <h1
             className={cn(
                 "border-2 border-black bg-[#fabfe2]",
-                "font-medium",
+                "font-bold",
                 "inline-block",
                 "mt-2",
                 "px-6 py-3",

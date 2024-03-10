@@ -24,17 +24,26 @@ const Project = ({
                 <ProjectVideoDemo src={demo} />
             </div>
             <div className={cn("px-5 py-10")}>
-                <h2 className={cn("font-medium", "text-2xl", "underline")}>
+                <h2
+                    className={cn(
+                        "border-2 border-black bg-secondary",
+                        "font-bold",
+                        "inline-block",
+                        "py-3 px-6",
+                        "rounded-lg -rotate-3",
+                        "shadow-neo-md",
+                        "text-2xl",
+                    )}
+                >
                     {name}
                 </h2>
-                <AppText className={cn("font-light", "mt-5", "text-lg")}>
+                <AppText className={cn("font-light", "my-10", "text-lg")}>
                     {description}
                 </AppText>
                 <div
                     className={cn(
                         "border-2 border-black bg-primary",
                         "inline-block",
-                        "mt-5",
                         "rounded-lg",
                         "shadow-neo-sm",
                     )}
@@ -59,7 +68,13 @@ const Project = ({
                             </div>
                         </a>
                     ) : (
-                        <p className={cn("px-3 py-3", "text-lg")}>
+                        <p
+                            className={cn(
+                                "font-medium",
+                                "px-3 py-3",
+                                "text-lg",
+                            )}
+                        >
                             Website is under development
                         </p>
                     )}

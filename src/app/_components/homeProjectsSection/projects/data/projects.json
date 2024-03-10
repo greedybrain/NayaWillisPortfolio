@@ -1,6 +1,6 @@
 [
     {
-        "name": "The Law Offices of Marissa A. Joseph, PLLC",
+        "name": "LawOfficesOfMaj",
         "description": "This website represents a Law Firm specializing in immigration law, with a focus on asylum, citizenship & naturalization, and family-based immigration. Developed using React, NextJS, and Typescript, and deployed on Vercel, it offers a modern, efficient user experience. Additionally, the site incorporates Google ReCaptcha to enhance security and protect against bots and malicious activities.",
         "demo": "https://mepjqyejyketnjhgffwm.supabase.co/storage/v1/object/public/DemoVideos/lawofficesofmaj-demo-video.mp4?t=2024-03-09T20%3A06%3A41.552Z",
         "isFeatured": true,
