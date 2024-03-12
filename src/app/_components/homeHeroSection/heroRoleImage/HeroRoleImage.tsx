@@ -25,10 +25,11 @@ const HeroRoleImage = () => {
                 )}
             >
                 <Image
-                    src="/assets/naya-willis-black-and-white-v6.png"
+                    src="https://mepjqyejyketnjhgffwm.supabase.co/storage/v1/object/public/Avatars/naya-willis-black-and-white-v6.png"
                     alt="avatar"
                     width={300}
                     height={300}
+                    className={cn("rotate-12")}
                 />
             </div>
         </div>

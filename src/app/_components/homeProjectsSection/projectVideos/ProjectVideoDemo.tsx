@@ -3,19 +3,26 @@ import { cn } from "@/lib/utils";
 
 interface ProjectVideoDemoProps {
     src: string;
+    isFirstVideo: boolean;
 }
 
-const ProjectVideoDemo = ({ src }: ProjectVideoDemoProps) => {
+const ProjectVideoDemo = ({ src, isFirstVideo }: ProjectVideoDemoProps) => {
     return (
-        <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className={cn("h-auto", "w-full")}
+        <div
+            className={cn("border-t-2 border-b-2 border-black", {
+                "border-t-0": isFirstVideo,
+            })}
         >
-            <source src={src} type="video/mp4" />
-        </video>
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className={cn("h-auto", "w-full")}
+            >
+                <source src={src} type="video/mp4" />
+            </video>
+        </div>
     );
 };
 

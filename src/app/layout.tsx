@@ -1,8 +1,10 @@
 import "./globals.css";
 
+import Footer from "./_components/footer/Footer";
 import Header from "./_components/header/Header";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import ReCaptchaV3 from "./_components/reCaptchaV3/ReCaptchaV3";
 import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
@@ -22,10 +24,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={cn(poppins.className, "bg-slate-100")}>
-                <Header />
-                {children}
-            </body>
+            <ReCaptchaV3>
+                <body className={cn(poppins.className, "bg-slate-100")}>
+                    <Header />
+                    {children}
+                    <Footer />
+                </body>
+            </ReCaptchaV3>
         </html>
     );
 }

@@ -12,7 +12,10 @@ import { cn } from "@/lib/utils";
 
 const HomeHeroSection = () => {
     return (
-        <AppSection className={cn("bg-primary border-b-2 border-b-black")}>
+        <AppSection
+            id="hero"
+            className={cn("bg-primary border-b-2 border-b-black")}
+        >
             <FixedWidthContainer>
                 <div className={cn("py-14")}>
                     <div>

@@ -1,5 +1,9 @@
 import AppText from "../../0_common/AppText";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import ProjectDescription from "./ProjectDescription";
+import ProjectIsUnderDevelopment from "./ProjectIsUnderDevelopment";
+import ProjectLink from "./ProjectLink";
+import ProjectName from "./ProjectName";
 import { ProjectType } from "./types";
 import ProjectVideoDemo from "../projectVideos/ProjectVideoDemo";
 import React from "react";
@@ -16,30 +20,14 @@ const Project = ({
 
     return (
         <li>
+            <ProjectVideoDemo src={demo} isFirstVideo={isFirstVideo} />
             <div
-                className={cn("border-t-2 border-b-2 border-black", {
-                    "border-t-0": isFirstVideo,
+                className={cn("px-5 py-10", {
+                    "bg-[#fff3b6]": index % 2 === 0,
                 })}
             >
-                <ProjectVideoDemo src={demo} />
-            </div>
-            <div className={cn("px-5 py-10")}>
-                <h2
-                    className={cn(
-                        "border-2 border-black bg-secondary",
-                        "font-bold",
-                        "inline-block",
-                        "py-3 px-6",
-                        "rounded-lg -rotate-3",
-                        "shadow-neo-md",
-                        "text-2xl",
-                    )}
-                >
-                    {name}
-                </h2>
-                <AppText className={cn("font-light", "my-10", "text-lg")}>
-                    {description}
-                </AppText>
+                <ProjectName name={name} />
+                <ProjectDescription description={description} />
                 <div
                     className={cn(
                         "border-2 border-black bg-primary",
@@ -49,34 +37,9 @@ const Project = ({
                     )}
                 >
                     {link ? (
-                        <a
-                            href={link}
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className={cn(
-                                "font-medium flex",
-                                "gap-x-3",
-                                "items-center",
-                                "p-3",
-                            )}
-                        >
-                            <span className={cn("inline-block", "text-lg")}>
-                                Check it out
-                            </span>
-                            <div>
-                                <FaExternalLinkAlt size={18} />
-                            </div>
-                        </a>
+                        <ProjectLink link={link} />
                     ) : (
-                        <p
-                            className={cn(
-                                "font-medium",
-                                "px-3 py-3",
-                                "text-lg",
-                            )}
-                        >
-                            Website is under development
-                        </p>
+                        <ProjectIsUnderDevelopment />
                     )}
                 </div>
             </div>

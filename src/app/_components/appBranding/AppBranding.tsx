@@ -4,7 +4,13 @@ import Link from "next/link";
 import React from "react";
 import { cn } from "@/lib/utils";
 
-const AppBranding = () => {
+const AppBranding = ({
+    textColor,
+    textSize = "2xl",
+}: {
+    textColor: string;
+    textSize?: string;
+}) => {
     return (
         <Link
             href="/"
@@ -14,10 +20,13 @@ const AppBranding = () => {
                 "py-1 px-2",
                 // "rounded-md",
                 // "shadow-neo-xs",
+                `${textColor} ${textSize}`,
             )}
         >
-            <AppText className={cn("flex flex-col", "justify-center")}>
-                <AppSpan text="NW." className={cn("font-bold", "text-lg")} />
+            <AppText
+                className={cn("flex flex-col font-bold", "justify-center")}
+            >
+                NW.
             </AppText>
         </Link>
     );

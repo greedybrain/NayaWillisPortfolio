@@ -23,7 +23,7 @@ const Header = () => {
                     "py-3",
                 )}
             >
-                <AppBranding />
+                <AppBranding textColor="black" textSize="2xl" />
                 <MenuButton className={cn("cursor-pointer")} size={30} />
             </FixedWidthContainer>
         </AppHeader>
