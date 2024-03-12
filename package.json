@@ -10,6 +10,7 @@
         "email": "email dev --dir ./src/emails"
     },
     "dependencies": {
+        "@vercel/analytics": "^1.2.2",
         "@vercel/blob": "^0.22.1",
         "axios": "^1.6.7",
         "clsx": "^2.1.0",

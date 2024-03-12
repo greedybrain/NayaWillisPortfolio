@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
 import Footer from "./_components/footer/Footer";
 import Header from "./_components/header/Header";
 import type { Metadata } from "next";
@@ -25,6 +26,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <ReCaptchaV3>
+                <Analytics />
                 <body className={cn(poppins.className, "bg-slate-100")}>
                     <Header />
                     {children}
