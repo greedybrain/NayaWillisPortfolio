@@ -5,7 +5,13 @@ import { cn } from "@/lib/utils";
 const AboutPersonalInterestsDescription = () => {
     return (
         <AppText
-            className={cn("font-light", "leading-relaxed", "mt-5", "text-lg")}
+            className={cn(
+                "font-light",
+                "leading-relaxed",
+                "lg:text-xl",
+                "mt-5",
+                "text-lg",
+            )}
         >
             Oh, and outside of the realms of coding or programming, I’m
             typically found binge-watching TV shows or movies on Netflix, or

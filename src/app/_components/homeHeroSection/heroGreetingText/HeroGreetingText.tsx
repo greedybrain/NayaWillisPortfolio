@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const HeroGreetingText = () => {
     return (
-        <AppText className={cn("font-light", "text-lg")}>
+        <AppText className={cn("font-light", "sm:text-xl", "text-lg")}>
             Good day, my name is <HeroNameHighlight />
         </AppText>
     );

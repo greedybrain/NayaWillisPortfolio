@@ -10,15 +10,29 @@ import { cn } from "@/lib/utils";
 
 const HomeAboutSection = () => {
     return (
-        <AppSection id="about" className={cn("bg-secondary border-b-2 border-b-black")}>
-            <RepeatTitle titleToRepeat="ABOUT ME" />
-            <FixedWidthContainer>
-                <div className={cn("py-12")}>
-                    <AboutIntroduction />
-                    <AboutTitle />
-                    <div className={cn("max-w-[750px]")}>
-                        <AboutExpertiseDescription />
-                        <AboutPersonalInterestsDescription />
+        <AppSection id="about">
+            <FixedWidthContainer
+                className={cn(
+                    "bg-secondary border-b-2 border-black",
+                    "lg:border-l-2 lg:border-r-2",
+                    // "px-5",
+                )}
+            >
+                <RepeatTitle titleToRepeat="ABOUT ME" />
+                <div
+                    className={cn(
+                        "flex flex-col",
+                        "lg:items-center lg:py-14 lg:px-0",
+                        "px-5 py-12",
+                    )}
+                >
+                    <div>
+                        <AboutIntroduction />
+                        <AboutTitle />
+                        <div className={cn("max-w-[750px]")}>
+                            <AboutExpertiseDescription />
+                            <AboutPersonalInterestsDescription />
+                        </div>
                     </div>
                 </div>
             </FixedWidthContainer>

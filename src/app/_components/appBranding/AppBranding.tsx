@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const AppBranding = ({
     textColor,
-    textSize = "2xl",
+    textSize,
 }: {
     textColor: string;
     textSize?: string;

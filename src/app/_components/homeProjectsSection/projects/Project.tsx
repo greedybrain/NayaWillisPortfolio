@@ -16,13 +16,19 @@ const Project = ({
     index,
     link,
 }: ProjectType & { index: number }) => {
-    const isFirstVideo = index === 0;
-
     return (
-        <li>
-            <ProjectVideoDemo src={demo} isFirstVideo={isFirstVideo} />
+        <li
+            className={cn(
+                "border-t-2 border-black",
+                "lg:flex lg:even:flex-row-reverse",
+                {
+                    "border-t-0": index === 0,
+                },
+            )}
+        >
+            <ProjectVideoDemo src={demo} index={index} />
             <div
-                className={cn("px-5 py-10", {
+                className={cn("lg:w-1/2", "px-5 py-10", {
                     "bg-[#fff3b6]": index % 2 === 0,
                 })}
             >

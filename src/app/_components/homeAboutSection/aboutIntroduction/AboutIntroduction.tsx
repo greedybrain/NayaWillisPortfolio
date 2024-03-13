@@ -6,7 +6,7 @@ const AboutIntroduction = () => {
     return (
         <AppText
             text="Not to sound selfish, but..."
-            className={cn("text-lg")}
+            className={cn("lg:text-xl", "text-lg")}
         />
     );
 };

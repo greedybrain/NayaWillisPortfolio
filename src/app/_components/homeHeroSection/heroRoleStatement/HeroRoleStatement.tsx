@@ -13,11 +13,14 @@ const HeroRoleStatement = () => {
                     rotation="rotate-3"
                     bgColor="bg-[#fabfe2]"
                 />
-                <AppSpan className={cn("-rotate-3", "text-lg")} text="with a" />
+                <AppSpan
+                    className={cn("-rotate-3", "sm:text-xl", "text-lg")}
+                    text="with a"
+                />
             </AppText>
             <AppText className={cn("flex", "gap-4", "items-center", "mt-10")}>
                 <AppSpan
-                    className={cn("rotate-3", "text-lg")}
+                    className={cn("rotate-3", "sm:text-xl", "text-lg")}
                     text="passion for"
                 />
                 <HeroRoleTag

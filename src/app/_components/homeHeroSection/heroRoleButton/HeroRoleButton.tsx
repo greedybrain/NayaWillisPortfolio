@@ -10,7 +10,7 @@ const HeroRoleButton = () => {
                 "font-medium",
                 "px-6 py-4",
                 "rounded-md -rotate-3",
-                "shadow-neo-md",
+                "shadow-neo-md sm:text-2xl",
                 "text-xl",
             )}
         >

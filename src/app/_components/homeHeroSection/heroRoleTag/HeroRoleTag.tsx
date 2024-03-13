@@ -17,8 +17,8 @@ const HeroRoleTag = ({ text, rotation, bgColor }: HeroRoleTagProps) => {
                 "inline-block",
                 "py-3 px-6",
                 `rounded-md ${rotation}`,
-                "shadow-neo-sm",
-                "text-xl text-center",
+                "shadow-neo-sm sm:text-xl",
+                "text-lg text-center",
             )}
             text={text}
         />

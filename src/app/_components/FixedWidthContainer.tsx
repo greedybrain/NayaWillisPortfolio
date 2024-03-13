@@ -13,7 +13,6 @@ const FixedWidthContainer = ({
             className={cn(
                 "mx-auto",
                 "max-w-[1280px]",
-                "px-5",
                 "w-full",
                 rest.className,
             )}

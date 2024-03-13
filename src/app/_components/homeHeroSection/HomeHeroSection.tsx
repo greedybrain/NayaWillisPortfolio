@@ -1,5 +1,4 @@
 import AppSection from "../0_common/AppSection";
-import { FiCornerRightDown } from "react-icons/fi";
 import FixedWidthContainer from "../FixedWidthContainer";
 import HeroGreetingText from "./heroGreetingText/HeroGreetingText";
 import HeroRoleButton from "./heroRoleButton/HeroRoleButton";
@@ -12,12 +11,24 @@ import { cn } from "@/lib/utils";
 
 const HomeHeroSection = () => {
     return (
-        <AppSection
-            id="hero"
-            className={cn("bg-primary border-b-2 border-b-black")}
-        >
-            <FixedWidthContainer>
-                <div className={cn("py-14")}>
+        <AppSection id="hero" className={cn("lg:flex")}>
+            <FixedWidthContainer
+                className={cn(
+                    "border-t-2 border-b-2 border-black",
+                    "flex flex-col",
+                    "lg:flex-row",
+                )}
+            >
+                <div
+                    className={cn(
+                        "bg-primary border-black",
+                        "flex flex-col",
+                        "items-center",
+                        "lg:border-l-2",
+                        "px-5 py-14",
+                        "w-full",
+                    )}
+                >
                     <div>
                         <HeroGreetingText />
                         <HeroRoleStatement />
@@ -35,8 +46,8 @@ const HomeHeroSection = () => {
                         </div>
                     </div>
                 </div>
+                <HeroRoleImage />
             </FixedWidthContainer>
-            <HeroRoleImage />
         </AppSection>
     );
 };

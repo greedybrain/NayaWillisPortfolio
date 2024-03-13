@@ -5,7 +5,13 @@ import { cn } from "@/lib/utils";
 const AboutExpertiseDescription = () => {
     return (
         <AppText
-            className={cn("font-light", "leading-relaxed", "mt-10", "text-lg")}
+            className={cn(
+                "font-light",
+                "leading-relaxed",
+                "lg:text-xl",
+                "mt-10",
+                "text-lg",
+            )}
         >
             My expertise extends across key technologies such as <b>React</b>,{" "}
             <b>Redux</b>, <b>NextJS</b>, and <b>TypeScript</b>, enabling me to

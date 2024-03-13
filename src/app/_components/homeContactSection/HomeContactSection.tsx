@@ -9,18 +9,30 @@ import { cn } from "@/lib/utils";
 
 const HomeContactSection = () => {
     return (
-        <AppSection
-            id="contact"
-            className={cn("bg-primary border-b-2 border-b-black")}
-        >
-            <RepeatTitle titleToRepeat="CONTACT ME" />
-            <FixedWidthContainer>
-                <div className={cn("py-12")}>
-                    <ContactHeading />
-                    <div className={cn("mt-5")}>
-                        <ContactCTA />
+        <AppSection id="contact">
+            <FixedWidthContainer
+                className={cn(
+                    "bg-primary border-b-2 border-black",
+                    "lg:border-l-2 lg:border-r-2",
+                    // "px-5",
+                )}
+            >
+                <RepeatTitle titleToRepeat="CONTACT ME" />
+                <div
+                    className={cn(
+                        "flex flex-col",
+                        "items-center",
+                        "lg:px-0",
+                        "px-5 py-12",
+                    )}
+                >
+                    <div className={cn("max-w-[560px]")}>
+                        <ContactHeading />
+                        <div className={cn("mt-5")}>
+                            <ContactCTA />
+                        </div>
+                        <ContactForm />
                     </div>
-                    <ContactForm />
                 </div>
             </FixedWidthContainer>
         </AppSection>
