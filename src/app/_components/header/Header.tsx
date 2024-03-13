@@ -14,7 +14,8 @@ const Header = () => {
                     "flex",
                     "items-center",
                     "justify-between",
-                    "py-3 px-0",
+                    "lg:px-0",
+                    "py-3 px-5",
                 )}
             >
                 <AppBranding textColor="text-black" textSize="text-3xl" />
