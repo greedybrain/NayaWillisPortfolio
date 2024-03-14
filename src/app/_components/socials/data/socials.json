@@ -1,0 +1,22 @@
+[
+    {
+        "name": "LinkedIn",
+        "path": "https://www.linkedin.com/in/naya-willis-b6b30131/",
+        "icon": "FaLinkedin"
+    },
+    {
+        "name": "Dev.to",
+        "path": "https://dev.to/greedybrain",
+        "icon": "FaDev"
+    },
+    {
+        "name": "Github",
+        "path": "https://github.com/greedybrain",
+        "icon": "FaGithubSquare"
+    },
+    {
+        "name": "Email",
+        "path": "mailto:hireme@itswillis.dev",
+        "icon": "MdEmail"
+    }
+]

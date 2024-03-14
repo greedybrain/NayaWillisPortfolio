@@ -5,8 +5,11 @@ import AppText from "../0_common/AppText";
 import FixedWidthContainer from "../FixedWidthContainer";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
+import NavItem from "../navItems/NavItem";
 import React from "react";
+import Socials from "../socials/Socials";
 import { cn } from "@/lib/utils";
+import navItemsJson from "../navItems/data/navItems.json";
 
 const Footer = () => {
     return (
@@ -61,18 +64,9 @@ const Footer = () => {
                                     "w-full",
                                 )}
                             >
-                                <li>
-                                    <Link href="/">Home</Link>
-                                </li>
-                                <li>
-                                    <Link href="#about">About</Link>
-                                </li>
-                                <li>
-                                    <Link href="#projects">Projects</Link>
-                                </li>
-                                <li>
-                                    <Link href="#contact">Contact</Link>
-                                </li>
+                                {navItemsJson.map((item) => (
+                                    <NavItem key={item.name} {...item} />
+                                ))}
                             </ul>
                         </div>
                         <div>
@@ -86,58 +80,7 @@ const Footer = () => {
                             >
                                 Socials
                             </AppText>
-                            <ul
-                                className={cn(
-                                    "flex",
-                                    "gap-x-2",
-                                    "items-center",
-                                    "justify-center",
-                                    "mt-4",
-                                    "pb-5",
-                                    "text-white",
-                                    "w-full",
-                                )}
-                            >
-                                <li>
-                                    <a
-                                        href="/"
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                    >
-                                        <FaLinkedin size={30} color="white" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                    >
-                                        <FaDev size={30} color="white" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                    >
-                                        <FaGithubSquare
-                                            size={30}
-                                            color="white"
-                                        />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="mailto:hireme@itswillis.dev"
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                    >
-                                        <MdEmail size={30} color="white" />
-                                    </a>
-                                </li>
-                            </ul>
+                            <Socials />
                         </div>
                     </div>
                     <AppText
