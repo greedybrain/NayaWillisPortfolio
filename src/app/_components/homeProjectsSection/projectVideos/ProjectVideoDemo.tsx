@@ -64,8 +64,6 @@ const ProjectVideoDemo = ({ src, index }: ProjectVideoDemoProps) => {
             })}
         >
             <video
-                autoPlay
-                loop
                 muted
                 playsInline
                 className={cn("h-full", "w-full", {
