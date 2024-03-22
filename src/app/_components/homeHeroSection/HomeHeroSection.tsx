@@ -14,7 +14,7 @@ const HomeHeroSection = () => {
         <AppSection id="hero" className={cn("lg:flex")}>
             <FixedWidthContainer
                 className={cn(
-                    "border-t-2 border-b-2 border-black",
+                    "border-t border-b border-black",
                     "flex flex-col",
                     "lg:flex-row",
                 )}
@@ -24,7 +24,7 @@ const HomeHeroSection = () => {
                         "bg-primary border-black",
                         "flex flex-col",
                         "items-center",
-                        "lg:border-l-2",
+                        "lg:border-l",
                         "px-5 py-14",
                         "w-full",
                     )}

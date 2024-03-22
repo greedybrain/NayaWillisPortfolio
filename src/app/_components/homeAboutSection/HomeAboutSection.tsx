@@ -13,12 +13,12 @@ const HomeAboutSection = () => {
         <AppSection id="about">
             <FixedWidthContainer
                 className={cn(
-                    "bg-secondary border-b-2 border-black",
-                    "lg:border-l-2 lg:border-r-2",
+                    "bg-secondary border-b border-black",
+                    "lg:border-l lg:border-r",
                     // "px-5",
                 )}
             >
-                <RepeatTitle titleToRepeat="ABOUT ME" />
+                {/* <RepeatTitle titleToRepeat="ABOUT ME" /> */}
                 <div
                     className={cn(
                         "flex flex-col",

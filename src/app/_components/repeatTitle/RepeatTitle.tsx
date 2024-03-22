@@ -22,7 +22,7 @@ const RepeatTitle = ({ titleToRepeat }: { titleToRepeat: string }) => {
         >
             <p
                 className={cn(
-                    "flex font-bold",
+                    "flex font-medium",
                     "items-center",
                     "px-5",
                     "text-center text-nowrap text-xl text-white",

@@ -19,7 +19,7 @@ const Project = ({
     return (
         <li
             className={cn(
-                "border-t-2 border-black",
+                "border-t border-black",
                 "lg:flex lg:even:flex-row-reverse",
                 {
                     "border-t-0": index === 0,
@@ -28,7 +28,7 @@ const Project = ({
         >
             <ProjectVideoDemo src={demo} index={index} />
             <div
-                className={cn("lg:w-1/2", "px-5 py-10", {
+                className={cn("lg:w-1/2", "p-16", {
                     "bg-[#fff3b6]": index % 2 === 0,
                 })}
             >
@@ -36,7 +36,7 @@ const Project = ({
                 <ProjectDescription description={description} />
                 <div
                     className={cn(
-                        "border-2 border-black bg-primary",
+                        "border border-black bg-primary",
                         "inline-block",
                         "rounded-lg",
                         "shadow-neo-sm",

@@ -12,12 +12,12 @@ const HomeContactSection = () => {
         <AppSection id="contact">
             <FixedWidthContainer
                 className={cn(
-                    "bg-primary border-b-2 border-black",
-                    "lg:border-l-2 lg:border-r-2",
+                    "bg-primary border-b border-black",
+                    "lg:border-l lg:border-r",
                     // "px-5",
                 )}
             >
-                <RepeatTitle titleToRepeat="CONTACT ME" />
+                {/* <RepeatTitle titleToRepeat="CONTACT ME" /> */}
                 <div
                     className={cn(
                         "flex flex-col",

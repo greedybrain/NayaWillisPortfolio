@@ -4,17 +4,17 @@ import { cn } from "@/lib/utils";
 const HeroRoleButton = () => {
     return (
         <Link
-            href=""
+            href="#contact"
             className={cn(
                 "border-2 border-black bg-[#FADE5A]",
                 "font-medium",
                 "px-6 py-4",
-                "rounded-md -rotate-3",
+                "rounded-md",
                 "shadow-neo-md sm:text-2xl",
                 "text-xl",
             )}
         >
-            Learn more
+            Let&apos;s work together!
         </Link>
     );
 };

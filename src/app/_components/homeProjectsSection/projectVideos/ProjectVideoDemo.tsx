@@ -58,9 +58,9 @@ const ProjectVideoDemo = ({ src, index }: ProjectVideoDemoProps) => {
 
     return (
         <div
-            className={cn("border-b-2 border-black", "lg:w-3/4 lg:border-b-0", {
-                "lg:border-r-2": index % 2 === 0,
-                "lg:border-l-2": index % 2 !== 0,
+            className={cn("border-b border-black", "lg:w-3/4 lg:border-b-0", {
+                "lg:border-r": index % 2 === 0,
+                "lg:border-l": index % 2 !== 0,
             })}
         >
             <video
@@ -77,7 +77,7 @@ const ProjectVideoDemo = ({ src, index }: ProjectVideoDemoProps) => {
                 <source
                     src={src}
                     type="video/mp4"
-                    className={cn("border-2 border-green-500")}
+                    className={cn("border border-green-500")}
                 />
             </video>
         </div>

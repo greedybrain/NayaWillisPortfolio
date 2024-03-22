@@ -10,11 +10,11 @@ const HomeProjectsSection = () => {
         <AppSection id="projects">
             <FixedWidthContainer
                 className={cn(
-                    "bg-quatenary border-b-2 border-black",
-                    "lg:border-l-2 lg:border-r-2",
+                    "bg-quatenary border-b border-black",
+                    "lg:border-l lg:border-r",
                 )}
             >
-                <RepeatTitle titleToRepeat="FEATURED PROJECTS" />
+                {/* <RepeatTitle titleToRepeat="FEATURED PROJECTS" /> */}
                 <Projects />
             </FixedWidthContainer>
         </AppSection>

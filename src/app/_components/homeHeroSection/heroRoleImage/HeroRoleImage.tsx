@@ -6,11 +6,11 @@ const HeroRoleImage = () => {
     return (
         <div
             className={cn(
-                "bg-[#fff3b6] border-t-2 border-black",
+                "bg-[#fff3b6] border-t border-black",
                 "flex",
                 "items-center",
                 "justify-center",
-                "lg:border-t-0 lg:border-l-2 lg:w-[800px] lg:border-r-2",
+                "lg:border-t-0 lg:border-l lg:w-[800px] lg:border-r",
                 "w-full",
             )}
         >

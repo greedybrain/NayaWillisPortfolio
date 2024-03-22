@@ -5,7 +5,7 @@ const ProjectName = ({ name }: { name: string }) => {
     return (
         <h2
             className={cn(
-                "border-2 border-black bg-secondary",
+                "border border-black bg-secondary",
                 "font-bold",
                 "inline-block",
                 "py-3 px-6",
