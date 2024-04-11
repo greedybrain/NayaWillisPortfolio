@@ -14,9 +14,5 @@
     {
         "name": "Contact",
         "path": "/#contact"
-    },
-    {
-        "name": "Collaborations",
-        "path": "/collaborations"
     }
 ]
